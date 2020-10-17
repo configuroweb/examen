@@ -195,7 +195,7 @@ if(@$_GET['q']== 2)
 $q=mysqli_query($con,"SELECT * FROM history WHERE email='$email' ORDER BY date DESC " )or die('Error197');
 echo  '<div class="panel title">
 <table class="table table-striped title1" >
-<tr style="color:red"><td><b>S.N.</b></td><td><b>Quiz</b></td><td><b>Question Solved</b></td><td><b>Right</b></td><td><b>Wrong<b></td><td><b>Score</b></td>';
+<tr style="color:red"><td><b>S.N.</b></td><td><b>Examen</b></td><td><b>Preguntas Resueltas</b></td><td><b>Buenas</b></td><td><b>Equivocadas<b></td><td><b>Puntaje</b></td>';
 $c=0;
 while($row=mysqli_fetch_array($q) )
 {
@@ -221,7 +221,7 @@ if(@$_GET['q']== 3)
 $q=mysqli_query($con,"SELECT * FROM rank  ORDER BY score DESC " )or die('Error223');
 echo  '<div class="panel title"><div class="table-responsive">
 <table class="table table-striped title1" >
-<tr style="color:red"><td><b>Rank</b></td><td><b>Name</b></td><td><b>Gender</b></td><td><b>College</b></td><td><b>Score</b></td></tr>';
+<tr style="color:red"><td><b>Rank</b></td><td><b>Nombre</b></td><td><b>Género</b></td><td><b>Institución</b></td><td><b>Puntaje</b></td></tr>';
 $c=0;
 while($row=mysqli_fetch_array($q) )
 {
@@ -268,7 +268,7 @@ echo '</table></div></div>';}
         <p>
 		<div class="row">
 		<div class="col-md-4">
-		 <img src="image/CAM00121.jpg" width=100 height=100 alt="Sunny Prakash Tiwari" class="img-rounded">
+		 <img src="image/avatar.jpg" width=100 height=100 alt="ConfiguroWeb" class="img-rounded">
 		 </div>
 		 <div class="col-md-5">
 		<a href="https://www.configuroweb.com/acerca-de-mi/" style="color:#202020; font-family:'typo' ; font-size:18px" title="Find on Facebook">Mauricio Sevilla Britto</a>
